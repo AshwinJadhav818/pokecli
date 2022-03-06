@@ -1,12 +1,17 @@
-#!/usr/bin/env node
-import React from 'react';
-import { render } from 'ink';
-import meow from 'meow';
-import App from './ui';
+# pokecli
 
-const cli = meow(
-	`
-    Usage
+## Install
+
+```bash
+$ npm install --global pokecli
+```
+
+## CLI
+
+```bash
+$ pokecli --help
+
+  Usage
       $ pokecli
 
     Options
@@ -26,15 +31,4 @@ const cli = meow(
         special-attack: 60
         special-defense: 50
         speed: 65
-`,
-	{
-		flags: {
-			name: {
-				type: "string",
-			},
-		},
-	}
-);
-
-
-render(<App name={cli.flags.name} />);
+```
