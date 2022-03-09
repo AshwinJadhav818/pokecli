@@ -34,13 +34,11 @@ const App = ({ name = "Stranger" }) => {
     var _a, _b;
     const [pokemonData, setPokemonData] = react_1.default.useState(null);
     // fetch pokemon data with its name using pokeapi
-    const pokemon = (name) => {
+    const pokemon = async (name) => {
         const url = `https://pokeapi.co/api/v2/pokemon/${name}`;
-        return axios_1.default
-            .get(url)
-            .then((response) => {
-            return response.data;
-        });
+        const response = await axios_1.default
+            .get(url);
+        return response.data;
     };
     // call useEffect and use store the pokemon data in state
     (0, react_1.useEffect)(() => {
