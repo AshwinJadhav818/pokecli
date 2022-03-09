@@ -1,34 +1,32 @@
 # pokecli
 
-## Install
+A CLI to find information about Pokemon!
 
-```bash
-$ npm install --global pokecli
-```
+- Built using `React Ink`
+
+![screenshot](https://i.imgur.com/3IV6kc1.png)
 
 ## CLI
 
-```bash
-$ pokecli --help
+```
+Usage
+  $ pokecli
 
-  Usage
-      $ pokecli
+Options
+  --name The name of the pokemon
 
-    Options
-        --name The name of the pokemon 
+Examples
+  $ pokecli --name=charmander
+  Charmander
+  ----------
+  Metrics: 0.6m, 8.5 kg
+  Type: fire
 
-    Examples
-      $ pokecli --name=charmander
-        Charmander
-        ----------
-        Metrics: 0.6m, 8.5 kg
-        Type: fire
-
-        Stats
-        hp: 39
-        attack: 52
-        defense: 43
-        special-attack: 60
-        special-defense: 50
-        speed: 65
+  Stats
+  hp: 39
+  attack: 52
+  defense: 43
+  special-attack: 60
+  special-defense: 50
+  speed: 65
 ```
